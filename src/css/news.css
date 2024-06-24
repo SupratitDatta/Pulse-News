@@ -1,0 +1,31 @@
+.news-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  font-size: 30px;
+  margin-left: 40px;
+  margin-top: 12vh; 
+  overflow-y: auto;
+  
+}
+
+.news-topic {
+  display: flex;
+  justify-content: flex-start;
+  width: 100%;
+}
+
+.loader-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+@media (max-width: 768px) {
+  .news-container {
+    margin-left: 0px;
+    margin-top: 10vh;
+  }
+}

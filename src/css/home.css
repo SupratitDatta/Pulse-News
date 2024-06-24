@@ -1,0 +1,19 @@
+.home-container {
+  display: flex;
+  flex-direction: row;
+}
+
+.home-content {
+  width: 100%;
+  margin-left: 20%;
+  align-item:end;
+  overflow-y: auto;
+}
+
+@media (max-width: 768px) {
+  .home-content {
+    overflow-y: hidden;
+    margin-left: 5%;
+    margin-right: 5%
+  }
+}

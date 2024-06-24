@@ -1,0 +1,134 @@
+.search-bar-container {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  max-width: 600px;
+  margin: 0 2vw;
+}
+
+.search-bar-input {
+  width: 10vw;
+  padding: 10px 16px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-right: none;
+  border-radius: 16px 0 0 16px;
+  flex-grow: 1;
+  outline: none;
+  transition: width 0.4s ease-in-out; 
+}
+
+.search-bar-input:focus {
+  width: 20vw; 
+}
+
+.search-bar-button {
+  padding: 5px 15px;
+  font-size: 25px;
+  background-color: #9239FF;
+  color: #fff;
+  border: 1px solid #9239FF;
+  border-radius: 0 16px 16px 0;
+  cursor: pointer;
+  outline: none;
+}
+
+.search-bar-button:hover {
+  background-color: #8829FD;
+  border-color: #8829FD;
+}
+
+.search-icon-container {
+  display: none;
+  cursor: pointer;
+  padding: 5px 8px;
+  margin-right: 10px;
+  font-size: 24px;
+  color: #9239FF;
+  border: 2px solid #9239FF;
+  border-radius: 50px;
+}
+
+.side-nav {
+  position: fixed;
+  top: 0;
+  right: -100%;
+  width: 80%;
+  background-color: #252525;
+  box-shadow: -2px 0 5px rgba(0, 0, 0, 0.5);
+  transition: right 0.3s ease;
+  z-index: 1000;
+  padding: 10px;
+  align-items: flex-start;
+  margin-top: 10vh;
+  min-height: 40px;
+  border-radius: 10px 0 0 10px;
+  display: flex;
+  flex-direction: row;
+}
+
+.side-nav.open {
+  right: 0;
+  margin-right: 10px;
+  padding-right: 30px;
+}
+
+.side-nav-input {
+  width: calc(100% - 40px);
+  padding: 10px 16px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 8px 0 0 8px;
+  outline: none;
+  font-weight: 600;
+  color: black;
+  background-color: lightgrey;
+}
+.side-nav-input::placeholder {
+  font-weight: 600;
+  color: black;
+}
+
+.side-nav-button {
+  padding: 5px 18px;
+  font-size: 25px;
+  background-color: #9239FF;
+  color: #fff;
+  border: 1px solid #9239FF;
+  border-radius: 0 8px 8px 0;
+  cursor: pointer;
+  outline: none;
+}
+
+.side-nav-button:hover {
+  background-color: #8829FD;
+  border-color: #8829FD;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease;
+  z-index: 999;
+}
+
+.overlay.open {
+  opacity: 1;
+  visibility: visible;
+}
+
+@media (max-width: 768px) {
+  .search-bar-container {
+    display: none;
+  }
+
+  .search-icon-container {
+    display: block;
+  }
+}
