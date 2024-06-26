@@ -20,6 +20,11 @@
   width: 100%;
 }
 
+.header-pic{
+  display:flex;
+  flex-direction: row;
+}
+
 .header-title {
   font-size: 24px;
   font-weight: bold;
@@ -28,6 +33,13 @@
 
 .header-icon{
   margin: 0px 15px;
+}
+
+.header-logo{
+  width: 130px;
+  height: auto;
+  margin: auto 20px;
+  border-radius: 10px
 }
 
 .header-search {
@@ -55,5 +67,8 @@
   }
   .header-icon{
     display: none;
+  }
+  .header-logo{
+    margin-left: 30px;
   }
 }
