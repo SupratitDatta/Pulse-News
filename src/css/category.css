@@ -75,7 +75,6 @@
   margin-right: 20px;
 }
 
-/* Media queries for responsiveness */
 @media (max-width: 768px) {
   .category-wrapper {
     transform: translateX(-100%);

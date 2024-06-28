@@ -62,12 +62,15 @@
   .header-container {
     height: 10vh;
   }
+
   .header-title{
     margin-left: 35px;
   }
+
   .header-icon{
     display: none;
   }
+  
   .header-logo{
     margin-left: 30px;
   }

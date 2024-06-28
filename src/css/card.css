@@ -38,6 +38,7 @@
   font-size: 14px;
   font-weight: 700;
   margin-bottom: 10px;
+  letter-spacing: 1px;
 }
 
 .card-title {
@@ -117,26 +118,30 @@
     object-position: center;
     margin-bottom: 25px;
   }
-  
 
   .card-source{
     margin-bottom: 25px;
+    letter-spacing: 3px;
   }
 
   .card-content {
     width: 90%;
     padding-left: 0px;
   }
+
   .card-title {
     font-size: 25px;
     margin-bottom: 15px;
   }
+
   .card-title a{
     color: #BB86FC;
   }
+
   .card-footer {
     flex-direction: column; 
   }
+  
   .card-button-group{
     padding: 0px 20px;
     justify-content: space-between;

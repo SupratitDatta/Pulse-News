@@ -1,7 +1,7 @@
 import React, { useContext, useState } from 'react';
 import { useNavigate, useLocation } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faHeartbeat, faFutbol, faFlask, faBriefcase, faMicrochip, faFilm, faFire, faHome,} from '@fortawesome/free-solid-svg-icons';
+import { faHeartbeat, faFutbol, faFlask, faBriefcase, faMicrochip, faFilm, faFire, faHome, } from '@fortawesome/free-solid-svg-icons';
 import { NewsContext } from '../utils/NewsContext';
 import '../css/category.css';
 

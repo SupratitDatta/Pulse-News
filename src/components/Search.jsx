@@ -22,8 +22,9 @@ const Search = () => {
         data: response?.articles,
       };
       navigate('/detail/search', { state: { category } });
-      setSearchQuery(''); 
-    } catch (error) {
+      setSearchQuery('');
+    }
+    catch (error) {
       console.error('Error fetching data:', error);
     }
     window.scrollTo({ top: 0, behavior: 'smooth' });
@@ -49,10 +50,10 @@ const Search = () => {
           placeholder="Search..."
           value={searchQuery}
           onChange={handleInputChange}
-          onKeyDown={handleKeyDown} 
+          onKeyDown={handleKeyDown}
         />
         <button className="search-bar-button" onClick={handleSearch}>
-          <FontAwesomeIcon icon={faSearch}/>
+          <FontAwesomeIcon icon={faSearch} />
         </button>
       </div>
       <div className="search-icon-container" onClick={toggleSideNav}>
@@ -65,7 +66,7 @@ const Search = () => {
           placeholder="Search..."
           value={searchQuery}
           onChange={handleInputChange}
-          onKeyDown={handleKeyDown} 
+          onKeyDown={handleKeyDown}
         />
         <button className="side-nav-button" onClick={handleSearch}>
           <FontAwesomeIcon icon={faSearch} />
