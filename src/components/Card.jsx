@@ -50,7 +50,7 @@ const Card = ({
             <button onClick={handleOriginalSite} className="card-site-link-btn">
               Original Site
             </button>
-            <button onClick={handleReadMore} className="card-read-more-btn">
+            <button onClick={handleOriginalSite} className="card-read-more-btn">
               Read More
             </button>
           </div>
